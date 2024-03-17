@@ -27,7 +27,7 @@ Device=$(thisdvc 'version')
 Server=$(new 'version')
 
 
-if [ "$Device" -le "$Server" ]; then
+if [ "$Device" -lt "$Server" ]; then
     echo "New Version Found | Version:" $(new 'version')
     echo "Launching File Updater"
     bash /home/runner/RMS-V2-or-Replits-Minecraft-Server/updater.sh
