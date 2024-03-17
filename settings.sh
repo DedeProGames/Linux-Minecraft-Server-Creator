@@ -1,7 +1,7 @@
 read -r -p "
 Server Settings
 1) Change Gamemode
-2) Create World
+2) Create a new World
 3) Change Difficulty
 4) Exit
 Choose a Number from 1 to 4.
