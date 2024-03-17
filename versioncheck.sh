@@ -25,14 +25,18 @@ echo "In This Device =         " $(thisdvc 'version')
 
 Device=$(thisdvc 'version')
 Server=$(new 'version')
-
+    echo No Updates found
 
 if [ "$Device" -lt "$Server" ]; then
     echo "New Version Found | Version:" $(new 'version')
     echo "Launching File Updater"
     bash /home/runner/RMS-V2-or-Replits-Minecraft-Server/updater.sh
 else
-    echo "$num1 is not greater than $num2"
+    if [ "$Device" -eq "$Server" ]; then
+        echo "No updates Found"
+    else
+        echo "No updates Found"
+    fi
 fi
 
 # Output:
