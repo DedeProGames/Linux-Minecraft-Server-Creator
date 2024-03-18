@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 root=$PWD
-cd /home/runner/RMS-V2-or-Replits-Minecraft-Server/
+cd ..
 
 rm -rf webstatus.log
 rm -rf status.log
