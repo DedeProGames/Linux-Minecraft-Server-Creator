@@ -30,7 +30,8 @@ Server=$(new 'version')
 if [ "$Device" -lt "$Server" ]; then
     echo "New Version Found | Version:" $(new 'version')
     echo "Launching File Updater"
-    bash /home/runner/RMS-V2-or-Replits-Minecraft-Server/updater.sh
+    cd ..
+    bash updater.sh
 else
     if [ "$Device" -eq "$Server" ]; then
         echo "No updates Found"
